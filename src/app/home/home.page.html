@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Quote of the Day</ion-title>
+        <ion-buttons slot="end">
+            <ion-button routerLink="/favorites">
+                <ion-icon name="heart">
+                </ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+<div class="quote-container">
+    <p class="quote-text">"{{quote}}"</p>
+    <p class="author-text">"{{author}}"</p>
+    <div class="buttons">
+        <ion-button expand="full" color="primary" (click)="loadQuote()">New Quote</ion-button>
+        <ion-button expand="full" color="success" (click)="saveFavorite()">Save</ion-button>
+        <ion-button expand="full" color="primary" (click)="shareQuote()">Share
+        </ion-button>
+    </div>
+</div>
+</ion-content>
+  
